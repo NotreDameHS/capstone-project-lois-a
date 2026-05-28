@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bmypqh0bnw6uf"]
+
+[node name="Hazard" type="Area2D" unique_id=1555501415]
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=93614258]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1654518248]

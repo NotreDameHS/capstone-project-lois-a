@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://4oa4tj0x8vpj"]
+
+[ext_resource type="Texture2D" uid="uid://ci0rgrjbak17u" path="res://player2.jpg" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://d3ndq8dcgtorb" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
+size = Vector2(651.2909, 638.8323)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_onrkg"]
+bg_color = Color(0, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="player" type="CharacterBody2D" unique_id=21338373]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2054568573]
+scale = Vector2(0.6642157, 0.875817)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=391664649]
+position = Vector2(6.1035156e-05, -3.425354)
+scale = Vector2(0.9999999, 0.9999997)
+shape = SubResource("RectangleShape2D_4flbx")
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=1422092535]
+offset_left = -186.0
+offset_top = -339.0
+offset_right = 200.0
+offset_bottom = -288.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_onrkg")
+value = 50.0
+show_percentage = false
+
+[node name="Timer" type="Timer" parent="." unique_id=1501627146]
