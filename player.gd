@@ -4,8 +4,9 @@ extends CharacterBody2D
 @export var max_health: float = 100
 @export var base_speed: float = 300  
 @onready var health_bar: ProgressBar = $ProgressBar
+@onready var speed_boost: Timer = $Timer
 var current_speed: float
-
+var current_health: float
 
 
 func _ready() -> void:
@@ -22,3 +23,7 @@ func _physics_process(delta: float) -> void:
 	
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_timer_timeout() -> void:
+	current_speed = base_speed	
