@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dcu37d6rt12ls"]
+
+[ext_resource type="PackedScene" uid="uid://bmypqh0bnw6uf" path="res://entities/collectibles/hazard.tscn" id="1_y8atg"]
+[ext_resource type="Texture2D" uid="uid://h2cj2lg35x5x" path="res://entities/collectibles/round-tumbleweed-flat-cartoon-style-design-on-white-background-vector.jpg" id="2_at5dj"]
+
+[node name="Tumbleweed" unique_id=1555501415 instance=ExtResource("1_y8atg")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=93614258]
+texture = ExtResource("2_at5dj")

@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://bmypqh0bnw6uf"]
 
+[ext_resource type="Script" uid="uid://beephpjedn5k3" path="res://entities/collectibles/hazard.gd" id="1_jp2gq"]
+
 [node name="Hazard" type="Area2D" unique_id=1555501415]
 collision_layer = 2
+script = ExtResource("1_jp2gq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=93614258]
 

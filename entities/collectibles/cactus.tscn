@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bnphb1hvesatd"]
+
+[ext_resource type="PackedScene" uid="uid://bmypqh0bnw6uf" path="res://entities/collectibles/hazard.tscn" id="1_swwn8"]
+[ext_resource type="Script" uid="uid://b40elv1mnplym" path="res://entities/collectibles/cactus.gd" id="2_wjnfj"]
+[ext_resource type="Texture2D" uid="uid://wjpb1p38geb8" path="res://entities/collectibles/cactus.webp" id="3_4drkd"]
+
+[node name="Cactus" unique_id=1555501415 instance=ExtResource("1_swwn8")]
+script = ExtResource("2_wjnfj")
+
+[node name="Sprite2D" parent="." index="0" unique_id=93614258]
+texture = ExtResource("3_4drkd")
