@@ -6,6 +6,7 @@
 
 [node name="Spike" unique_id=1555501415 instance=ExtResource("1_ylyv3")]
 script = ExtResource("2_1tucm")
+speed = 400.0
 
 [node name="Sprite2D" parent="." index="0" unique_id=93614258]
 texture = ExtResource("3_yo6je")
