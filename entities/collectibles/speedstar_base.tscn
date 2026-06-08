@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://sj0ykv8thr8y"]
+
+[ext_resource type="Script" uid="uid://bw0q7yflaebmj" path="res://entities/collectibles/speedstar_base.gd" id="1_sbbao"]
+
+[node name="SpeedstarBase" type="Area2D" unique_id=77782862]
+script = ExtResource("1_sbbao")
