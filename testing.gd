@@ -1,4 +1,8 @@
-extends Hazard
+extends CanvasLayer
+@onready var distance_label: Label = $DistanceLabel
+@onready var restart_button: Button = $RestartButton
+@onready var health_bar: ProgressBar = $HealthBar
+
 
 
 # Called when the node enters the scene tree for the first time.

@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 
 func _on_base_body_entered(body: Node2D) -> void:
 	if body.name == "Player" or body.is_in_group("player"):
-		on_collected(body)
+		apply_upgrade(body)
 		
-func on_collected(player: Node2D) -> void:
+func apply_upgrade(player: Node2D) -> void:
 	queue_free()
