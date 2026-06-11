@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://bmypqh0bnw6uf"]
+[gd_scene load_steps=0 format=3 uid="uid://bmypqh0bnw6uf"]
 
-[ext_resource type="Script" uid="uid://beephpjedn5k3" path="res://entities/collectibles/hazard.gd" id="1_jp2gq"]
+[ext_resource type="Script" uid="uid://beephpjedn5k3" path="res://levels/entities/collectibles/hazard.gd" id="1_jp2gq"]
+
 
 [node name="Hazard" type="Area2D" unique_id=1555501415]
 collision_layer = 2

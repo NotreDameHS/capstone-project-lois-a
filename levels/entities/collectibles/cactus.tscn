@@ -1,0 +1,13 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnphb1hvesatd"]
+
+[ext_resource type="PackedScene" uid="uid://bmypqh0bnw6uf" path="res://levels/entities/collectibles/hazard.tscn" id="1_swwn8"]
+[ext_resource type="Script" uid="uid://b40elv1mnplym" path="res://levels/entities/collectibles/cactus.gd" id="2_wjnfj"]
+[ext_resource type="Texture2D" uid="uid://wjpb1p38geb8" path="res://levels/entities/collectibles/cactus.webp" id="3_4drkd"]
+[ext_resource type="PackedScene" uid="uid://bcdf7ydtkfpb0" path="res://levels/entities/collectibles/spike.tscn" id="3_qc7hv"]
+
+[node name="Cactus" instance=ExtResource("1_swwn8")]
+script = ExtResource("2_wjnfj")
+spike_scene = ExtResource("3_qc7hv")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("3_4drkd")

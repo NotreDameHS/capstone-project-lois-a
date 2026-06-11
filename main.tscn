@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8re2mnwcypek"]
+
+[ext_resource type="Script" uid="uid://c0u4kvkq88v6g" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="CanvasLayer"]
+script = ExtResource("1_ig7tw")
+
+[node name="DistanceLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RestartBtn" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0

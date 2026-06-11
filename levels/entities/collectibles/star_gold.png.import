@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wjpb1p38geb8"
-path="res://.godot/imported/cactus.webp-2f8e1dae914ac602605d75b3ca16bff8.ctex"
+uid="uid://cccdkc18wt1jx"
+path="res://.godot/imported/star_gold.png-13a67fb564cd715095800487d1a6f4d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/collectibles/cactus.webp"
-dest_files=["res://.godot/imported/cactus.webp-2f8e1dae914ac602605d75b3ca16bff8.ctex"]
+source_file="res://levels/entities/collectibles/star_gold.png"
+dest_files=["res://.godot/imported/star_gold.png-13a67fb564cd715095800487d1a6f4d9.ctex"]
 
 [params]
 

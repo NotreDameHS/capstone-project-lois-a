@@ -1,0 +1,16 @@
+[gd_scene load_steps=0 format=3 uid="uid://niqg63pmqxhm"]
+
+[ext_resource type="PackedScene" uid="uid://sj0ykv8thr8y" path="res://levels/entities/collectibles/speedstar_base.tscn" id="1_2pxja"]
+[ext_resource type="Script" uid="uid://dqbjr34gh4ftk" path="res://levels/entities/collectibles/speedstar.gd" id="2_4a536"]
+[ext_resource type="Texture2D" uid="uid://cccdkc18wt1jx" path="res://levels/entities/collectibles/star_gold.png" id="3_x1wgw"]
+
+
+[node name="Speedstar" unique_id=77782862 instance=ExtResource("1_2pxja")]
+script = ExtResource("2_4a536")
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="0" unique_id=1263981425]
+position = Vector2(16, -9)
+scale = Vector2(5.112903, 4.7)
+texture = ExtResource("3_x1wgw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1" unique_id=546341028]

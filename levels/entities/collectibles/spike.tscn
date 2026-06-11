@@ -1,0 +1,13 @@
+[gd_scene load_steps=0 format=3 uid="uid://bcdf7ydtkfpb0"]
+
+[ext_resource type="PackedScene" uid="uid://bmypqh0bnw6uf" path="res://levels/entities/collectibles/hazard.tscn" id="1_ylyv3"]
+[ext_resource type="Script" uid="uid://dxadvouncon47" path="res://levels/entities/collectibles/spike.gd" id="2_1tucm"]
+[ext_resource type="Texture2D" uid="uid://dcebk0dvut7om" path="res://levels/entities/collectibles/spikepng.png" id="3_yo6je"]
+
+
+[node name="Spike" unique_id=1555501415 instance=ExtResource("1_ylyv3")]
+script = ExtResource("2_1tucm")
+speed = 400.0
+
+[node name="Sprite2D" parent="." index="0" unique_id=93614258]
+texture = ExtResource("3_yo6je")
