@@ -1,6 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://byihedkkmhc1c"]
+[gd_scene load_steps=4 format=3 uid="uid://byihedkkmhc1c"]
 
-[ext_resource type="Script" uid="uid://bivxdqrfcfebe" path="res://spawner.gd" id="1_yp5lu"]
+[ext_resource type="Script" uid="uid://c0u4kvkq88v6g" path="res://main.gd" id="1_mcln3"]
+[ext_resource type="PackedScene" uid="uid://b8re2mnwcypek" path="res://main.tscn" id="2_bphdf"]
+[ext_resource type="PackedScene" uid="uid://4oa4tj0x8vpj" path="res://levels/entities/player.tscn" id="3_7ocbr"]
 
 [node name="Spawner" type="Node2D"]
-script = ExtResource("1_yp5lu")
+script = ExtResource("1_mcln3")
+
+[node name="Main" parent="." instance=ExtResource("2_bphdf")]
+
+[node name="player" parent="." instance=ExtResource("3_7ocbr")]
+
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 1.5
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

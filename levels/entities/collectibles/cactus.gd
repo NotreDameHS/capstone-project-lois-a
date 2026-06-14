@@ -2,7 +2,7 @@ extends Hazard
 
 @export var spike_scene: PackedScene = preload("res://levels/entities/collectibles/spike.tscn")
 
-@onready var shoot_timer: Timer
+@onready var shoot_timer: Timer = $ShootTimer
 
 
 # Called when the node enters the scene tree for the first time.

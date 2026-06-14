@@ -11,3 +11,9 @@ spike_scene = ExtResource("3_qc7hv")
 
 [node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("3_4drkd")
+
+[node name="ShootTimer" type="Timer" parent="." index="2"]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]
