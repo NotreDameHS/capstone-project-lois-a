@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckqeqo70egfc3"]
+
+[ext_resource type="PackedScene" uid="uid://4oa4tj0x8vpj" path="res://levels/entities/player.tscn" id="1_dyxfn"]
+[ext_resource type="PackedScene" uid="uid://bnphb1hvesatd" path="res://levels/entities/collectibles/cactus.tscn" id="2_nqmqf"]
+[ext_resource type="PackedScene" uid="uid://niqg63pmqxhm" path="res://levels/entities/collectibles/speedstar.tscn" id="3_nqmqf"]
+[ext_resource type="PackedScene" uid="uid://dcu37d6rt12ls" path="res://levels/entities/collectibles/tumbleweed.tscn" id="4_qyon5"]
+[ext_resource type="PackedScene" uid="uid://b8re2mnwcypek" path="res://main.tscn" id="5_6c6g8"]
+
+[node name="Testing" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_dyxfn")]
+
+[node name="Cactus" parent="." instance=ExtResource("2_nqmqf")]
+position = Vector2(0, 78)
+
+[node name="Speedstar" parent="." instance=ExtResource("3_nqmqf")]
+
+[node name="Tumbleweed" parent="." instance=ExtResource("4_qyon5")]
+
+[node name="Main" parent="." instance=ExtResource("5_6c6g8")]

@@ -15,7 +15,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
-func _on_body_entered(body: Node) -> void:
+func _on_body_entered(body: Node2D) -> void:
 	# We check if the thing that walked into us is named Player
 	if body.name == "Player":
 		# If it is the player, tell them to run their take_damage function!

@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 @export var max_health: float = 100
 @export var base_speed: float = 300 
-@onready var health_bar: ProgressBar = $ProgressBar
+@onready var health_bar:ProgressBar  = $HealthBar
 var current_speed: float
 var current_health: float
 var screen_size: Vector2

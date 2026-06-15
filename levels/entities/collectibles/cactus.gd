@@ -26,9 +26,20 @@ func _on_shoot_timer_timeout() -> void:
 	var player = get_tree().current_scene.get_node_or_null("Player")
 	
 	if player != null and spike_scene != null:
-		# Clone a brand new Spike instance into the world map
+		# make a brand new Spike 
 		var new_spike = spike_scene.instantiate()
 		new_spike.global_position = global_position
-		
+		var launch_direction = (player.global_position - global_position).normalized()
+		new_spike.set_launch_direction(launch_direction)
+		#Add the spike into the main scene moves
+		get_tree().current_scene.add_child(new_spike)
+
+
+#when the player catches into the cactus
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == "Player" and body.has_method("take_damage"):
+		body.take_damage(20.0) # Direct crash damage
+		queue_free()
+
 
 		

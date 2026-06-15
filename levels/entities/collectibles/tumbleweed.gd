@@ -8,7 +8,7 @@ class_name Tumbleweed
 func _ready() -> void:
 	super._ready()
 	base_speed = 200.0
-	damage = 10
+	damage = 25
 	direction = Vector2(-1, 0) # Moves left
 
 
@@ -22,3 +22,8 @@ func _process(delta: float) -> void:
 	
 	# Handle the visual spin
 	rotation += rotation_speed * delta
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == "Player" and body.has_method("take_damage"):
+		body.take_damage(25.0) 
+		queue_free()
